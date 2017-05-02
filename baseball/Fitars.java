@@ -1,28 +1,24 @@
 package baseball;
 
-public class Giants extends Team {
+public class Fitars extends Team {
+	String[] names = { "西川", "松本", "近藤", "中田", "レアード", "大谷", "大野", "中島", "有原" };
 
-	String[] names ={"坂本","阿部","村田","小林","脇谷","橋本","立岡","長野","菅野"};
-
-
-	//boolean attack = true;
+	// boolean attack = true;
 
 	public void teamInformation() {
 
-		this.teamName = "ジャイアンツ";
-		this.mainStadium = "東京ドーム";
+		this.teamName = "ファイターズ";
+		this.mainStadium = "札幌ドーム";
 		// System.out.println();
 	}
 
-	public Giants() {
+	public Fitars() {
 
 		player = new Player[9];
-		//names = new String[9] { "坂本", "阿部", "村田", "小林", "脇谷", "橋本", "立岡", "長野", "菅野" };
 
 		for(int i = 0  ; i<9 ; i++ ){
 			player [i] = new Player();
 			player [i].setName (names [i]) ;
-
 		}
 	}
 
